@@ -8,9 +8,11 @@
     <link href="{{ asset('css/fontawesome-all.min.css') }}" rel="stylesheet"/>
 
     {% block stylesheets %}{% endblock %}
+    {% include '@App/templates/navbar.html.twig' %}
 </head>
-{% block body %}
 <body>
+{% block body %}
+
 
 {% endblock %}
 
@@ -19,6 +21,7 @@
 <script src="{{ asset('js/popper.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/index.js') }}"></script>
+<script src="{{ asset('js/navbar.js') }}"></script>
 
 {% block javascripts %}{% endblock %}
 </body>
