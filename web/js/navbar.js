@@ -12,3 +12,8 @@ $(window).on("scroll", function () {
         $("nav").removeClass("black");
     }
 });
+
+$("a").click(function () {
+    $("a").removeClass("active");
+    $(this).addClass("active");
+})
